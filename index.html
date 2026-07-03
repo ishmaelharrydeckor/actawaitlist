@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acta Technologies — Build Better Software. Faster with AI.</title>
+  <meta name="description" content="Acta Technologies is an AI-native product engineering company. We help founders and businesses launch production-ready software in record time.">
+  
+  <!-- SEO & Social OpenGraph Meta Tags -->
+  <meta property="og:title" content="Acta Technologies — Build Better Software. Faster with AI.">
+  <meta property="og:description" content="AI-native product engineering. We build websites, apps, SaaS, and internal tools in record time.">
+  <meta property="og:type" content="website">
+  
+  <!-- Custom Favicon using the brand logo -->
+  <link rel="icon" href="logo.jpg" type="image/jpeg">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Fonts: Inter for modern technical typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Background decorative element for ambient lighting -->
+  <div class="ambient-glow" id="ambientGlow"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- MAIN LANDING PAGE CONTAINER -->
+  <div class="landing-container" id="landingPage">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <img src="logo.jpg" alt="Acta Technologies Logo" class="logo-img">
+        <span class="brand-name">Acta Technologies</span>
+      </div>
+      <button class="btn-primary join-waitlist-trigger" onclick="app.openWaitlist()">
+        <span>Join Waitlist</span>
+      </button>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="hero-section">
+      <div class="hero-content">
+        <!-- Logo glowing ring -->
+        <div class="logo-glow-wrapper">
+          <img src="logo.jpg" alt="Acta Technologies Icon" class="hero-logo-icon">
+        </div>
+
+        <h1 class="hero-title">
+          <span class="text-white">Build Better Software.</span><br>
+          <span class="rotating-headline" id="rotatingHeadline">Faster with AI.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Traditional software development is slow. Acta Technologies combines modern engineering with AI workflows to help founders and businesses launch production-ready software in record time.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn-primary btn-large" onclick="app.openWaitlist()">
+            <span>Join the Waitlist</span>
+          </button>
+          <a href="#why-acta" class="btn-secondary btn-large">
+            <span>Learn More</span>
+          </a>
+        </div>
+
+        <div class="scroll-indicator">
+          <div class="mouse-icon">
+            <div class="wheel"></div>
+          </div>
+          <span>Scroll to explore</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- Founder Letter -->
+    <section class="section founder-section" id="founder-letter">
+      <div class="section-container">
+        <div class="founder-card">
+          <span class="badge">A Note from Our Founders</span>
+          <h2 class="section-title">Why Acta Exists</h2>
+          <div class="founder-content">
+            <p>Traditional software development is expensive, slow, and inaccessible. Creating custom products shouldn't take months of design cycles and legacy bottlenecks. AI changes everything.</p>
+            <p>At Acta Technologies, we are pioneering AI-native workflows to automate code generation, structure scalable architectures, and speed up testing cycles. We are building the software company we always wished existed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Acta / Features Section -->
+    <section class="section features-section" id="why-acta">
+      <div class="section-container">
+        <span class="badge center-badge">Features</span>
+        <h2 class="section-title text-center">Built for Speed and Reliability</h2>
+        
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <div class="feature-card">
+            <div class="card-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>AI-Native Development</h3>
+            <p>We engineer products with AI integrated into every stage of development, optimizing speed and output quality.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="feature-card">
+            <div class="card-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Faster Delivery</h3>
+            <p>Launch in weeks instead of months. Cut down time-to-market and iterate based on live user data immediately.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="feature-card">
+            <div class="card-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Production Ready</h3>
+            <p>Scalable cloud infrastructure, industry-standard modern security rules, and code architected to grow with you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof Placeholders -->
+    <section class="section social-proof-section">
+      <div class="section-container text-center">
+        <span class="badge center-badge">Founding Partners</span>
+        <h2 class="section-title">Trusted by Ambitious Founders</h2>
+        <p class="social-subtitle">Launching with our first cohort of founding startup partners. Secure your spot to join them.</p>
+        <div class="logo-strip-placeholder">
+          <span>Acta Partner Network — Coming Soon</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <span class="footer-title">Acta Technologies</span>
+        <span class="footer-tagline">Building software with AI.</span>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2026 Acta Technologies. All rights reserved.
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- CONVERSATIONAL WAITLIST ONBOARDING MODAL -->
+  <div class="waitlist-modal" id="waitlistModal">
+    <div class="modal-layout">
+      <!-- Modal Header -->
+      <header class="modal-header">
+        <div class="brand">
+          <img src="logo.jpg" alt="Acta Technologies Logo" class="logo-img">
+          <span class="brand-name">Acta Waitlist</span>
+        </div>
+        <button class="btn-close" aria-label="Close form" onclick="app.closeWaitlist()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </header>
+
+      <!-- Progress Line Indicator -->
+      <div class="modal-progress-container">
+        <div class="modal-progress-bar" id="modalProgressBar" style="width: 0%"></div>
+      </div>
+
+      <!-- Main Slider Form -->
+      <main class="modal-form-wrapper">
+        <form id="actaWaitlistForm" onsubmit="event.preventDefault();">
+          
+          <!-- STEP 1: Who are you? -->
+          <section class="modal-step active" data-step="1" id="step-1">
+            <div class="step-content">
+              <span class="step-num">01.</span>
+              <label class="step-label">Who are you?</label>
+              <div class="options-grid">
+                <label class="option-card">
+                  <input type="radio" name="role" value="Founder" required>
+                  <div class="option-card-inner">
+                    <span class="key-badge">A</span>
+                    <span class="option-text">Founder</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="role" value="Business Owner">
+                  <div class="option-card-inner">
+                    <span class="key-badge">B</span>
+                    <span class="option-text">Business Owner</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="role" value="Student">
+                  <div class="option-card-inner">
+                    <span class="key-badge">C</span>
+                    <span class="option-text">Student</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="role" value="Freelancer">
+                  <div class="option-card-inner">
+                    <span class="key-badge">D</span>
+                    <span class="option-text">Freelancer</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="role" value="Developer">
+                  <div class="option-card-inner">
+                    <span class="key-badge">E</span>
+                    <span class="option-text">Developer</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="role" value="Organization">
+                  <div class="option-card-inner">
+                    <span class="key-badge">F</span>
+                    <span class="option-text">Organization</span>
+                  </div>
+                </label>
+              </div>
+              <div class="step-actions">
+                <button type="button" class="btn-primary" onclick="app.nextStep()">
+                  <span>Next</span>
+                  <kbd class="shortcut-kbd">Enter ↵</kbd>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- STEP 2: What do you want to build? -->
+          <section class="modal-step" data-step="2" id="step-2">
+            <div class="step-content">
+              <span class="step-num">02.</span>
+              <label class="step-label">What do you want to build?</label>
+              <div class="options-grid">
+                <label class="option-card">
+                  <input type="radio" name="buildType" value="Website" required>
+                  <div class="option-card-inner">
+                    <span class="key-badge">A</span>
+                    <span class="option-text">Website</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="buildType" value="Android App">
+                  <div class="option-card-inner">
+                    <span class="key-badge">B</span>
+                    <span class="option-text">Android App</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="buildType" value="iOS App">
+                  <div class="option-card-inner">
+                    <span class="key-badge">C</span>
+                    <span class="option-text">iOS App</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="buildType" value="AI Tool">
+                  <div class="option-card-inner">
+                    <span class="key-badge">D</span>
+                    <span class="option-text">AI Tool</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="buildType" value="SaaS">
+                  <div class="option-card-inner">
+                    <span class="key-badge">E</span>
+                    <span class="option-text">SaaS</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="buildType" value="Internal Dashboard">
+                  <div class="option-card-inner">
+                    <span class="key-badge">F</span>
+                    <span class="option-text">Internal Dashboard</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="buildType" value="Business Automation">
+                  <div class="option-card-inner">
+                    <span class="key-badge">G</span>
+                    <span class="option-text">Business Automation</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="buildType" value="Not Sure Yet">
+                  <div class="option-card-inner">
+                    <span class="key-badge">H</span>
+                    <span class="option-text">Not Sure Yet</span>
+                  </div>
+                </label>
+              </div>
+              <div class="step-actions">
+                <button type="button" class="btn-primary" onclick="app.nextStep()">
+                  <span>Next</span>
+                  <kbd class="shortcut-kbd">Enter ↵</kbd>
+                </button>
+                <button type="button" class="btn-back" onclick="app.prevStep()">Back</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- STEP 3: What best describes your project? -->
+          <section class="modal-step" data-step="3" id="step-3">
+            <div class="step-content">
+              <span class="step-num">03.</span>
+              <label class="step-label">What best describes your project?</label>
+              <div class="options-grid">
+                <label class="option-card">
+                  <input type="radio" name="projectType" value="Startup" required>
+                  <div class="option-card-inner">
+                    <span class="key-badge">A</span>
+                    <span class="option-text">Startup</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="projectType" value="MVP">
+                  <div class="option-card-inner">
+                    <span class="key-badge">B</span>
+                    <span class="option-text">MVP</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="projectType" value="Existing Product">
+                  <div class="option-card-inner">
+                    <span class="key-badge">C</span>
+                    <span class="option-text">Existing Product</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="projectType" value="Internal Tool">
+                  <div class="option-card-inner">
+                    <span class="key-badge">D</span>
+                    <span class="option-text">Internal Tool</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="projectType" value="AI Automation">
+                  <div class="option-card-inner">
+                    <span class="key-badge">E</span>
+                    <span class="option-text">AI Automation</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="projectType" value="Personal Project">
+                  <div class="option-card-inner">
+                    <span class="key-badge">F</span>
+                    <span class="option-text">Personal Project</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="projectType" value="Still Exploring">
+                  <div class="option-card-inner">
+                    <span class="key-badge">G</span>
+                    <span class="option-text">Still Exploring</span>
+                  </div>
+                </label>
+              </div>
+              <div class="step-actions">
+                <button type="button" class="btn-primary" onclick="app.nextStep()">
+                  <span>Next</span>
+                  <kbd class="shortcut-kbd">Enter ↵</kbd>
+                </button>
+                <button type="button" class="btn-back" onclick="app.prevStep()">Back</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- STEP 4: When are you planning to start? -->
+          <section class="modal-step" data-step="4" id="step-4">
+            <div class="step-content">
+              <span class="step-num">04.</span>
+              <label class="step-label">When are you planning to start?</label>
+              <div class="options-grid">
+                <label class="option-card">
+                  <input type="radio" name="timeline" value="Immediately" required>
+                  <div class="option-card-inner">
+                    <span class="key-badge">A</span>
+                    <span class="option-text">Immediately</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="timeline" value="Within One Month">
+                  <div class="option-card-inner">
+                    <span class="key-badge">B</span>
+                    <span class="option-text">Within One Month</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="timeline" value="Within Three Months">
+                  <div class="option-card-inner">
+                    <span class="key-badge">C</span>
+                    <span class="option-text">Within Three Months</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="timeline" value="Just Exploring">
+                  <div class="option-card-inner">
+                    <span class="key-badge">D</span>
+                    <span class="option-text">Just Exploring</span>
+                  </div>
+                </label>
+              </div>
+              <div class="step-actions">
+                <button type="button" class="btn-primary" onclick="app.nextStep()">
+                  <span>Next</span>
+                  <kbd class="shortcut-kbd">Enter ↵</kbd>
+                </button>
+                <button type="button" class="btn-back" onclick="app.prevStep()">Back</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- STEP 5: How did you hear about us? -->
+          <section class="modal-step" data-step="5" id="step-5">
+            <div class="step-content">
+              <span class="step-num">05.</span>
+              <label class="step-label">How did you hear about us?</label>
+              <div class="options-grid">
+                <label class="option-card">
+                  <input type="radio" name="referral" value="Twitter/X" required>
+                  <div class="option-card-inner">
+                    <span class="key-badge">A</span>
+                    <span class="option-text">Twitter/X</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="referral" value="WhatsApp">
+                  <div class="option-card-inner">
+                    <span class="key-badge">B</span>
+                    <span class="option-text">WhatsApp</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="referral" value="LinkedIn">
+                  <div class="option-card-inner">
+                    <span class="key-badge">C</span>
+                    <span class="option-text">LinkedIn</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="referral" value="Google">
+                  <div class="option-card-inner">
+                    <span class="key-badge">D</span>
+                    <span class="option-text">Google</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="referral" value="Friend">
+                  <div class="option-card-inner">
+                    <span class="key-badge">E</span>
+                    <span class="option-text">Friend</span>
+                  </div>
+                </label>
+                <label class="option-card">
+                  <input type="radio" name="referral" value="Other">
+                  <div class="option-card-inner">
+                    <span class="key-badge">F</span>
+                    <span class="option-text">Other</span>
+                  </div>
+                </label>
+              </div>
+              <div class="step-actions">
+                <button type="button" class="btn-primary" onclick="app.nextStep()">
+                  <span>Next</span>
+                  <kbd class="shortcut-kbd">Enter ↵</kbd>
+                </button>
+                <button type="button" class="btn-back" onclick="app.prevStep()">Back</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- STEP 6: Personal Information -->
+          <section class="modal-step" data-step="6" id="step-6">
+            <div class="step-content">
+              <span class="step-num">06.</span>
+              <label class="step-label">Personal Information</label>
+              
+              <div class="form-inputs-group">
+                <div class="input-wrapper">
+                  <label for="fullName" class="form-field-label">Full Name</label>
+                  <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required autocomplete="name">
+                </div>
+                <div class="input-wrapper">
+                  <label for="email" class="form-field-label">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="name@company.com" required autocomplete="email">
+                </div>
+                <div class="input-wrapper">
+                  <label for="whatsapp" class="form-field-label">Phone Number (Optional)</label>
+                  <input type="tel" id="whatsapp" name="whatsapp" placeholder="e.g. +1 555 123 4567" autocomplete="tel">
+                </div>
+                <div class="input-wrapper">
+                  <label for="company" class="form-field-label">Company</label>
+                  <input type="text" id="company" name="company" placeholder="Your organization name" required autocomplete="organization">
+                </div>
+                <div class="input-wrapper">
+                  <label for="country" class="form-field-label">Country</label>
+                  <input type="text" id="country" name="country" placeholder="e.g. United States" required autocomplete="country-name">
+                </div>
+              </div>
+
+              <div class="step-actions">
+                <button type="submit" class="btn-primary">
+                  <span>Submit Application</span>
+                  <kbd class="shortcut-kbd">Enter ↵</kbd>
+                </button>
+                <button type="button" class="btn-back" onclick="app.prevStep()">Back</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- STEP 7: Success screen -->
+          <section class="modal-step" data-step="7" id="step-7">
+            <div class="step-content success-content">
+              <div class="success-badge">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6L9 17L4 12" stroke="#137d45" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h1 class="success-title">Congratulations 🎉</h1>
+              <p class="success-subtitle">You're officially on the Acta Technologies waitlist.</p>
+              <p class="success-description">We'll notify you before everyone else.</p>
+              
+              <div class="success-actions">
+                <button type="button" class="btn-primary" onclick="app.shareWaitlist()">
+                  <span>Share Access Link</span>
+                </button>
+                <button type="button" class="btn-secondary" onclick="app.closeWaitlist()">
+                  <span>Return Home</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+        </form>
+      </main>
+
+      <!-- Modal Footer -->
+      <footer class="modal-footer">
+        <div class="footer-navigation">
+          <button type="button" class="nav-arrow" id="navPrev" aria-label="Previous step" onclick="app.prevStep()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button type="button" class="nav-arrow" id="navNext" aria-label="Next step" onclick="app.nextStep()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <div class="footer-brand">
+          <span>Acta OS v1.0</span>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
