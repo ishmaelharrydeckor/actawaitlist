@@ -336,6 +336,8 @@ class ActaWaitlistApp {
   handleSubmit() {
     if (!this.validateStep(this.currentStep)) return;
 
+    const formData = new FormData(this.form);
+
     // Structure payload keys to match the exact keys Google Apps Script expects
     const payload = {
       timestamp: new Date().toISOString(),
