@@ -735,8 +735,30 @@ body::after {
   border-radius: 50%;
   background-color: rgba(19, 125, 69, 0.1);
   border: 1.5px solid rgba(19, 125, 69, 0.3);
-  margin-bottom: 24px;
-  animation: scaleUp 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  margin: 0 auto 24px auto; /* Centered in flex containers */
+  align-self: center;       /* Flex parent alignment */
+  animation: scaleUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards, pulseGlow 2.5s infinite ease-in-out 0.6s;
+}
+
+.check-path {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: drawCheck 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.3s;
+}
+
+@keyframes drawCheck {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(19, 125, 69, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px 8px rgba(19, 125, 69, 0.35);
+  }
 }
 
 .success-title {
